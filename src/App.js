@@ -4,6 +4,7 @@ import { useState } from 'react';
 function App() {
   const [score, setScore] = useState("10");
   const [comment, setComment]= useState("");
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (Number(score) <= 5 && comment.length <=10) {
